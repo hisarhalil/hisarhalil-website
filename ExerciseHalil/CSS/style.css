@@ -221,7 +221,7 @@ html {
   font-family: "Mooli", cursive;
   font-size: 10rem;
   color: #fff;
-  text-shadow: 0 1rem, 3rem rgba(0, 0, 0, 0);
+  text-shadow: 0 1rem, 3rem rgba(0, 0, 0, 0); /*[0 1rem 3] remvirgül sebebiyle calismamis ve son deger 0 olursa tamamaen saydam (transparan) olur*/
 }
 .banner h3 {
   font-size: 3rem;
