@@ -5,6 +5,7 @@
   text-decoration: none;
   outline: none;
   font-family: "Mukta", sans-serif;
+  text-transform: none;
 }
 html {
     font-size: 62.5%;
@@ -39,6 +40,7 @@ header {
 
 .navbar a {
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .logo {
@@ -84,8 +86,9 @@ header {
 
 .nav-item {
     list-style: none;
+    position: relative;
     margin: 4px;
-    ;
+
 }
 
 .nav-link {
@@ -96,6 +99,206 @@ header {
 
 }
 
+.dropdown-1{
+    display: flex;
+    position:absolute;
+    top:9rem;
+    left: -12rem;
+    background-color: #fff;
+    width: 96rem;
+    height: 60rem;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
+    padding: 2rem;
+}
+
+.dropdown-1-left{
+    width: 30%;
+    padding-right: 4rem; 
+}
+.dropdown-1-right{
+    width: 70%;
+    padding-left: 4rem;  
+}
+
+.dropdown-1-right h3{
+    font-family: "Mutka", sans-serif;
+    font-size: 1.8rem;
+    color: #8698a7;
+    padding-bottom: 1rem;
+    margin-bottom:3rem;
+    border-bottom: .2rem solid rgba(134,152,167,0.5);
+}
+
+.dropdown-1-left h3{ 
+    font-family: "Mutka", sans-serif;
+    font-size: 1.8rem;
+    color: #8698a7;
+    padding-bottom: 1rem;
+    margin-bottom:3rem;
+    border-bottom: .2rem solid rgba(134,152,167,0.5);
+}
+
+.features-list-item{
+    margin: 1.5rem 0;
+    display:flex;
+    align-items: center;
+    cursor:pointer;
+}
+.features-list-item i{
+    font-size: 2rem;
+    width: 4rem;
+    color:#8698a7;
+    transition: color 0.3s;
+}
+.features-list-item span{
+    font-size: 1.8rem;
+    color:#8698a7;
+    transition: color 0.3s;
+}
+.features-list-item:hover i,
+.features-list-item:hover span{
+    color:#222
+}
+
+.dropdown-services{
+    height: 45rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.dropdown-service{
+    display:flex;
+    margin-bottom: 3.5rem ;
+    align-items: center;
+    cursor:pointer;
+    transition: transform 0.3s;
+    /*background:linear-gradient(to right,#86868642, #ffffff00);*/
+    border-radius: 4rem;
+}
+.dropdown-service i{
+    font-size: 2.5rem;
+    height: 5.5rem;
+    width: 5.5rem;
+    color:#fff;
+    /*background:linear-gradient(to right,#b150f1, #7e23da);*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4rem;
+    /*box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);*/
+    margin-right:1rem;
+}
+.dropdown-service:hover {
+    transform: scale(1.05)
+}
+.dropdown-service:nth-child(1){
+    background:linear-gradient(to right,#b150f125, #ffffff00);
+}
+.dropdown-service:nth-child(2) {
+    background: linear-gradient(to right, #31dce125, #ffffff00);
+}
+.dropdown-service:nth-child(3) {
+    background: linear-gradient(to right, #3f51ec25, #ffffff00); 
+}
+.dropdown-service:nth-child(4) {
+    background: linear-gradient(to right, #00d3e025, #ffffff00); 
+}
+.dropdown-service:nth-child(5) {
+    background: linear-gradient(to right, #ff963525, #ffffff00); 
+}
+.dropdown-service:nth-child(6) {
+    background: linear-gradient(to right, #3293ff25, #ffffff00); 
+}
+.dropdown-service:nth-child(7) {
+    background: linear-gradient(to right, #282c4525, #ffffff00); 
+}/**/
+
+.dropdown-service:nth-child(1) i{
+    background: linear-gradient(to right, #b150f1, #7e23da);
+    box-shadow: 0 0.5rem 2rem rgba(150, 50, 255, 0.3);;
+}
+.dropdown-service:nth-child(2) i{
+    background: linear-gradient(to right, #31dce1, #23d683);
+    box-shadow: 0 0.5rem 2rem rgba(35, 214, 131, 0.3);;
+}
+.dropdown-service:nth-child(3) i{
+    background: linear-gradient(to right, #3f51ec, #232dcf);
+    box-shadow: 0 0.5rem 2rem rgba(17, 37, 223, 0.3);;
+}
+.dropdown-service:nth-child(4) i{
+    background: linear-gradient(to right, #00d3e0, #03b4d8);
+    box-shadow: 0 0.5rem 2rem rgba(0, 111, 131, 0.3);;
+}
+.dropdown-service:nth-child(5) i{
+    background: linear-gradient(to right, #ff9635, #fa751c);
+    box-shadow: 0 0.5rem 2rem rgba(190, 115, 2, 0.3);;
+}
+.dropdown-service:nth-child(6) i{
+    background: linear-gradient(to right, #3293ff, #2371ff);
+    box-shadow: 0 0.5rem 2rem rgba(0, 70, 223, 0.3);;
+}
+.dropdown-service:nth-child(7) i{
+    background: linear-gradient(to right, #282c45, #20252c);
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);;
+}
+.dropdown-service-item{
+    display: flex;
+    flex-direction: column;
+}
+.dropdown-service-item span{
+    font-size:1.6rem
+}
+.dropdown-service:nth-child(1) .dropdown-service-item span:nth-child(1){
+ color: #b150f1;
+}
+.dropdown-service:nth-child(2) .dropdown-service-item span:nth-child(1){
+ color: #31dce1;
+}
+.dropdown-service:nth-child(3) .dropdown-service-item span:nth-child(1){
+ color: #3f51ec;
+}
+.dropdown-service:nth-child(4) .dropdown-service-item span:nth-child(1){
+ color: #00d3e0;
+}
+.dropdown-service:nth-child(5) .dropdown-service-item span:nth-child(1){
+ color: #ff9635;
+}
+.dropdown-service:nth-child(6) .dropdown-service-item span:nth-child(1){
+ color: #3293ff;
+}
+.dropdown-service:nth-child(7) .dropdown-service-item span:nth-child(1){
+ color: #282c45;
+}
+.dropdown-service-item span:nth-child(1){
+    font-weight: bold; 
+    text-transform: uppercase;
+}
+.dropdown-service-item span:nth-child(2){
+    font-weight: 300;
+    color:#8698a7
+}
+.dropdown-1-right button{
+    width: 100%;
+    height: 4rem;
+    background: linear-gradient(to right,#aa3fec, #8430ea);
+    border-radius: 3rem;
+    border: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #fff;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2); 
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    transition:transform 0.5s ease;
+}
+.dropdown-1-right button:hover{ 
+  transform: translateY(-0.2rem);
+}
 .nav-btn {
     font-size: 2rem;
     background-color: #fff;
@@ -218,3 +421,9 @@ header {
   opacity: 0.3;
   box-shadow: 7rem 4rem 6rem rgba(0, 0, 0, 0.9);
 }
+
+/*  NOTLAR
+hover: üzerine mouse geldigi tepki vermeye yarar; hatreket, renk gibi. 
+hover e yavasgecis icin "transition: color 0.3s" kullanilir. color disinda baska seyler de eklenebilir.
+"flex-wrap: wrap;": satir veya sütuna sigmazsa sonraki satir veya sütuna gecis saglar.
+*/
